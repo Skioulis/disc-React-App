@@ -2,11 +2,13 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import Message from './components/Message'
+import TestComponent from './components/TestComponent.jsx'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/*<App />*/}
-      <Message />
+    {/*  <Message />*/}
+      <TestComponent />
   </StrictMode>,
 )
