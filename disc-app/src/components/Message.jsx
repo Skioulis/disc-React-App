@@ -12,7 +12,7 @@ export default function Message() {
             try {
                 const res = await fetch('http://localhost:3000/');
                 const data = await res.json();
-                // console.log(data);
+                console.log(data.body.name);
                 if (isMounted) {
                     setMessage(data?.message ?? 'No message');
                     setMessageBody(data?.body ?? 'No message body');
@@ -22,6 +22,7 @@ export default function Message() {
                     setMessage('Failed to load message');
                     setMessageBody('Failed to load message body');
                 }
+                console.warn(e);
             }
         }
 
@@ -33,8 +34,8 @@ export default function Message() {
 
     return (
         <>
-            <h1>{message}</h1>
-            <h2>{messageBody}</h2>
+
+            <h2>{messageBody.name}</h2>
         </>
     );
 }
