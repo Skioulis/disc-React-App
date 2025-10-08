@@ -33,7 +33,7 @@ function TestComponent() {
             try {
                 const data = await fetchData();
                 setResponse(data?.body ?? 'No data');
-                console.log(data);
+
             } catch (error) {
                 console.error('Failed to fetch data:', error);
             }
@@ -45,7 +45,12 @@ function TestComponent() {
     return (
         <>
             <h1>Test Component</h1>
-            <p>{response}</p>
+            {response && (
+                <div>
+                    <p>Name: {response.name}</p>
+                    <p>Surname: {response.surname}</p>
+                </div>
+            )}
         </>
     )
 }
