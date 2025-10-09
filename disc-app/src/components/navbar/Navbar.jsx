@@ -1,12 +1,27 @@
 import React from 'react';
-import { Search, Plus, Play, Music, Users, FileText } from 'lucide-react';
+import { Search, CirclePlus, Play, Music, Users, FileText } from 'lucide-react';
 import './Navbar.css';
 
 const Navbar = () => {
     return (
         <header>
             <nav className="navbar">
-                <Plus size={24} />
+                <div className="left-section">
+                    <div className="plus-logo">
+                        <CirclePlus className={'add-button'}/>
+                    </div>
+                </div>
+
+                {/*<button className="button button-icon add-button">*/}
+                {/*    <Plus*/}
+                {/*        size={24}*/}
+                {/*        strokeLinecap={'round'}*/}
+                {/*        strokeLinejoin={'round'}*/}
+                {/*        strokeWidth={2.5}*/}
+
+
+                {/*    />*/}
+                {/*</button>*/}
 
                 <div className="right-section">
                     <select className="dropdown">

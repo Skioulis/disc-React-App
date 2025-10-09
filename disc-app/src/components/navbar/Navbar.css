@@ -4,6 +4,7 @@
     margin: 0 auto;
     padding: 0;
     text-align: center;
+
 }
 
 header {
@@ -17,6 +18,8 @@ header {
     padding: 0;
 }
 
+
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -24,28 +27,24 @@ header {
     padding: 1rem 2rem;
     background-color: #9CAFAA;
     height: 8vh;
+    font-size: 1.5rem;
 }
 
 .add-button {
-    background-color: #00dd00;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #D6A99D;
     border: none;
-    border-radius: 5px;
-    width: 30px;
-    height: 30px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0.8;
 }
 
 .add-button:hover {
     background-color: #00bb00;
-}
-
-.plus-sign {
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
 }
 
 .right-section {
