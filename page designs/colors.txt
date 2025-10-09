@@ -1,6 +1,18 @@
 https://colorhunt.co/palette/d6a99dfbf3d5d6dac89cafaa
 
-D6A99D
-FBF3D5
-D6DAC8
-9CAFAA
+#D6A99D
+#FBF3D5
+#D6DAC8
+#9WAFAA
+
+
+#FBF3D5 as the background provides a soft, neutral base
+that's easy on the eyes and won't compete with your content
+#9CAFAA as the navbar creates a nice contrast while
+maintaining the earthy, calm aesthetic of the palette
+The darker sage green navbar will stand out clearly
+against the light background, making navigation obvious
+
+You can use
+#D6A99D (dusty rose) for accent elements, buttons, or hover states
+#D6DAC8 (light sage) works well for subtle borders, cards, or secondary elements

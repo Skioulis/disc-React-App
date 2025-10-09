@@ -1,13 +1,12 @@
 import React from 'react';
+import { Search, Plus, Play, Music, Users, FileText } from 'lucide-react';
 import './Navbar.css';
 
 const Navbar = () => {
     return (
         <header>
             <nav className="navbar">
-                <button className="add-button">
-                    <span className="plus-sign">+</span>
-                </button>
+                <Plus size={24} />
 
                 <div className="right-section">
                     <select className="dropdown">
