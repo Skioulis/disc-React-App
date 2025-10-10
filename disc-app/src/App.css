@@ -5,6 +5,7 @@
 }
 html {
     font-family: "Montserrat", sans-serif;
+    font-size: 24px;
 }
 body {
     background: #FBF3D5;
@@ -45,11 +46,11 @@ footer p {
     float: left;
 }
 .note h1 {
-    font-size: 1.1em;
+    font-size: 1em;
     margin-bottom: 6px;
 }
 .note p {
-    font-size: 1.1em;
+    font-size: 1em;
     margin-bottom: 10px;
     white-space: pre-wrap;
     word-wrap: break-word;
@@ -82,7 +83,7 @@ form textarea {
     border: none;
     padding: 4px;
     outline: none;
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: inherit;
     resize: none;
 }
