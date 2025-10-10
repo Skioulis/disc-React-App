@@ -14,7 +14,7 @@ function SearchBar() {
                 className="search-input"
             />
             <button className="search-button">
-                <Search />
+                <Search size={"2rem"}/>
             </button>
         </div>
     )
