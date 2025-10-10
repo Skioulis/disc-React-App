@@ -3,7 +3,7 @@
     height: 3rem;
     border-radius: 50%;
     background-color: #D6A99D;
-    border: none;
+    border: 0.3rem solid #D6DAC8;
     cursor: pointer;
     display: flex;
     align-items: center;
