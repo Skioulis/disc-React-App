@@ -2,9 +2,10 @@ import React from 'react';
 import { Search,  Play, Music, Users, FileText } from 'lucide-react';
 import './Navbar.css';
 import PlusButton from './buttons/PlusButton';
-import NavDropdown from './dropdown/NavDropdown';
+import SearchBar from "./search section/SearchBar.jsx";
 
-const Navbar = () => {
+
+function Navbar(){
     return (
         <header>
             <nav className="navbar">
@@ -13,13 +14,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="right-section">
-                    <NavDropdown />
-                    <input
-                        type="text"
-                        placeholder="Search..."
-                        className="search-input"
-                    />
-                    <button className="search-button">🔍</button>
+                    <SearchBar />
                 </div>
             </nav>
         </header>
