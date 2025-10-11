@@ -23,6 +23,10 @@
     background-color: red;
     height: auto;
     aspect-ratio: auto;
+    display: flex;                 /* make row horizontal */
+    align-items: center;           /* vertically center items */
+    justify-content: center;       /* center the title overall */
+    position: relative;
 }
 
 .list-item-second-row{
@@ -34,4 +38,40 @@
     background-color: green;
     height: auto;
     aspect-ratio: auto;
+}
+.list-item-circle{
+    background-color: yellow;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    flex: 0 0 auto;
+    display: flex;               /* center text inside */
+    align-items: center;         /* vertical center */
+    justify-content: center;     /* horizontal center */
+    font-weight: 600;            /* optional: clearer text */
+    font-size: 0.8rem;
+    line-height: 1;              /* avoid overflow from line height */
+    margin-right: 0.5rem;        /* keep if you still want space before title */
+    overflow: hidden;            /* ensure text doesn’t spill out */
+    text-align: center;          /* center multi-line text */
+    padding: 0.1rem;
+}
+.list-item-circle span {
+     display: inline-block;
+     max-width: 90%;
+     max-height: 90%;
+     font-size: clamp(0.5rem, 2.5vw, 1rem); /* scales with viewport, bounded */
+     line-height: 1;
+     white-space: nowrap;       /* keep short codes on one line */
+     text-overflow: ellipsis;   /* if still too long */
+ }
+
+.list-item-first-row-title {
+    flex: 1 1 auto;
+    text-align: center;
+    font-size: clamp(0.8rem, 2vw, 1.2rem); /* auto-adjust title size */
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

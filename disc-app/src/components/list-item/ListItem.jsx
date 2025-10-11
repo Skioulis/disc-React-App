@@ -5,7 +5,14 @@ function ListItem() {
     return (
         <div className="list-item">
             <div className="list-item-first-row">
-                test
+                <div className="list-item-circle">
+                    <span>d105</span>
+                </div>
+                <div className="list-item-first-row-title">
+                    <span>
+                        to xasapiko
+                    </span>
+                </div>
             </div>
             <div className="list-item-second-row">
                 test
