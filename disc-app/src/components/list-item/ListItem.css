@@ -1,5 +1,19 @@
+/*#D6A99D*/
+/*#FBF3D5*/
+/*#D6DAC8*/
+/*#9WAFAA*/
+
 .list-item {
-    background-color: white;
-    height: 10rem;
-    width: 10rem;
+    background-color: #D6A99D;
+    height: 30vh;
+    aspect-ratio: 7/10;
+    border-radius: 10px;
+    border: 1vh solid #D6DAC8;
+
+}
+
+.list-item-first-level{
+    background-color: red;
+    height: 25vh;
+    aspect-ratio: 7/10;
 }
