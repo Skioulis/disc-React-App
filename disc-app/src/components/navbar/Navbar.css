@@ -4,18 +4,21 @@
     margin: 0 auto;
     padding: 0;
     text-align: center;
+    justify-content: center;
 
 }
 
 header {
     position: fixed;
+    background-color: #FBF3D5;
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
-    z-index: 1000;
-    margin: 0;
+    width: 98%;
+    /*z-index: 1000;*/
+    margin: 0 auto;
     padding: 0;
+
 }
 
 .navbar {
@@ -26,6 +29,7 @@ header {
     background-color: #9CAFAA;
     height: 4.3rem;
     font-size: 1rem;
+    border-radius: 2dvw;
 }
 
 .right-section {

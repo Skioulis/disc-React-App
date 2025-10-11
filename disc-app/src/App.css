@@ -13,10 +13,10 @@ body {
 }
 
 header {
-    background-color: #f5ba13;
+    background-color: #FBF3D5;
     margin: auto -16px;
     padding: 16px 32px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    /*box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);*/
 }
 
 header h1 {
