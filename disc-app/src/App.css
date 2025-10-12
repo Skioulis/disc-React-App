@@ -1,3 +1,11 @@
+:root{
+    --color-bg: #FBF3D5;
+    --color-surface: #D6DAC8;
+    --color-accent: #9CAFAA;
+    --color-primary: #D6A99D;
+    --color-text: #1f2937;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -8,7 +16,7 @@ html {
     font-size: 24px;
 }
 body {
-    background: #FBF3D5;
+    background: var(--color-surface);
     padding: 0 16px;
 }
 
