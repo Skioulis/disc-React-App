@@ -22,7 +22,7 @@ function ListItem() {
             </div>
             <div className="list-item-second-row">
                 <span className="list-item-lyrics">
-                    {sampleLyrics.slice(0, 30) + "..."}
+                    {sampleLyrics.slice(0, 50) + "..."}
                 </span>
             </div>
             <div className="list-item-third-row">

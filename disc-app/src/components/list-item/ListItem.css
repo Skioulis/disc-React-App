@@ -1,14 +1,16 @@
 
 .list-item {
     background-color: var(--color-primary);
+    color: var(--color-text);
     height: 30vh;
     aspect-ratio: 7/10;
     border-radius: 10px;
-    border: 1vh solid var(--color-surface);
+    border: 0.1vh solid black;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 0.2rem;
+    box-shadow: 0 0 1vw 0 rgba(0, 0, 0, 0.3);
 }
 
 .list-item > :nth-child(1) { flex: 1 1 0; }
@@ -16,28 +18,19 @@
 .list-item > :nth-child(3) { flex: 2 1 0; }
 
 .list-item-first-row{
-    background-color: var(--color-accent);
+    background-color: var(--color-primary);
     height: auto;
     aspect-ratio: auto;
     display: flex;                 /* make row horizontal */
     align-items: center;           /* vertically center items */
     justify-content: center;       /* center the title overall */
     position: relative;
+    padding-left: 2rem;            /* space so centered title doesn't overlap circle */
 }
 
-.list-item-second-row{
-    background-color: blue;
-    height: auto;
-    aspect-ratio: auto;
-}
-.list-item-third-row{
-    background-color: green;
-    height: auto;
-    aspect-ratio: auto;
-    font-size: clamp(0.5rem, 1.5vw, 0.8rem);
-}
 .list-item-circle{
     background-color: var(--color-surface);
+    color: var(--color-text);
     height: 1.5rem;
     width: 1.5rem;
     border-radius: 50%;
@@ -47,12 +40,16 @@
     justify-content: center;     /* horizontal center */
     font-weight: 600;            /* optional: clearer text */
     line-height: 1;              /* avoid overflow from line height */
-    margin-right: 0.5rem;        /* keep if you still want space before title */
+    /* margin-right: 0.5rem; */  /* remove; circle is absolute now */
     overflow: hidden;            /* ensure text doesn’t spill out */
     text-align: center;          /* center multi-line text */
     padding: 0.14rem;
     box-shadow: 0 0 1vw 0 rgba(0, 0, 0, 0.3);
+    position: absolute;          /* pin to top-left of the row/card */
+    top: 0.4rem;
+    left: 0.4rem;
 }
+
 .list-item-circle .disk-id {
     display: inline-block;
     max-width: 100%;
@@ -64,6 +61,7 @@
     line-height: 1;
     text-align: center;
     font-size: clamp(0.3rem, 1.8vw, 0.7rem); /* responsive size within the circle */
+    color: var(--color-text);
 }
 
 .list-item-first-row-title {
@@ -74,12 +72,25 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    margin-left: 0.5rem;
+    margin-left: 0;               /* no shift; title remains centered */
 }
 
 .disk-id{
-    color: black;
+    color: var(--color-text);
 }
+
+.list-item-second-row{
+    background-color: var(--color-surface);
+    height: auto;
+    aspect-ratio: auto;
+}
+.list-item-third-row{
+    background-color: var( --color-accent);
+    height: auto;
+    aspect-ratio: auto;
+    font-size: clamp(0.5rem, 1.5vw, 0.8rem);
+}
+
 
 .list-item-second-row .list-item-lyrics{
     font-size: clamp(0.5rem, 1.5vw, 0.8rem);
