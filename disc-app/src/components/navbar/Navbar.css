@@ -10,7 +10,7 @@
 
 header {
     position: fixed;
-    background-color: #FBF3D5;
+    background-color:var(--color-surface);
     top: 0;
     left: 0;
     right: 0;
@@ -26,7 +26,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #9CAFAA;
+    background-color: var(--color-accent);
     height: 4.3rem;
     font-size: 1rem;
     border-radius: 2dvw;

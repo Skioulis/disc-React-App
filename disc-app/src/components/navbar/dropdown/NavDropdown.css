@@ -5,23 +5,25 @@
     width: auto;
     height: 3rem;
     font-size: 1rem;
+    color: var(--color-text);
 }
 .dropdown:hover {
-    background-color: #D6DAC8;
+    background-color: var(--color-surface);
 }
 
 .dropdown:focus {
     outline: none;
-    border: 2px solid #D6A99D;
+    border: 2px solid var(--color-primary);
+    color: var(--color-text);
 }
 
 .dropdown-option {
-    background-color: #D6DAC8;
-    color: #333;
+    background-color: var(--color-surface);
+    color: var(--color-text);
     padding: 8px;
     font-size: 1rem;
 }
 
 .dropdown-option:hover {
-    background-color: #D6A99D;
+    background-color: var(--color-primary);
 }

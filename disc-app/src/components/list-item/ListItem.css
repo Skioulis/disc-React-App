@@ -1,14 +1,10 @@
-/*#D6A99D*/
-/*#FBF3D5*/
-/*#D6DAC8*/
-/*#9WAFAA*/
 
 .list-item {
-    background-color: #D6A99D;
+    background-color: var(--color-primary);
     height: 30vh;
     aspect-ratio: 7/10;
     border-radius: 10px;
-    border: 1vh solid #D6DAC8;
+    border: 1vh solid var(--color-surface);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -20,7 +16,7 @@
 .list-item > :nth-child(3) { flex: 2 1 0; }
 
 .list-item-first-row{
-    background-color: #9CAFAA;
+    background-color: var(--color-accent);
     height: auto;
     aspect-ratio: auto;
     display: flex;                 /* make row horizontal */
@@ -41,7 +37,7 @@
     font-size: clamp(0.5rem, 1.5vw, 0.8rem);
 }
 .list-item-circle{
-    background-color: #FBF3D5;
+    background-color: var(--color-surface);
     height: 1.5rem;
     width: 1.5rem;
     border-radius: 50%;
