@@ -1,15 +1,18 @@
 import { useState } from 'react'
 import './App.css'
 import Navbar from './components/navbar/Navbar'
-import ListItem from "./components/list-item/ListItem.jsx";
+import Card from "./components/card/Card.jsx";
 
 function App() {
 
   return (
     <>
         <Navbar />
-        <ListItem />
-        test
+        <main>
+            <Card />
+        </main>
+
+
     </>
   )
 }

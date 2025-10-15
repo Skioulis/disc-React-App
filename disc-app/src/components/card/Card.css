@@ -5,7 +5,7 @@
     height: 30vh;
     aspect-ratio: 7/10;
     border-radius: 10px;
-    border: 0.1vh solid black;
+    border: 0.2vh solid black;
     display: flex;
     justify-content: center;
     flex-direction: column;

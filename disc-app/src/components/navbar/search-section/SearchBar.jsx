@@ -1,7 +1,7 @@
 import React from 'react'
 import { Search } from 'lucide-react';
 import NavDropdown from "../dropdown/NavDropdown.jsx";
-import './SeachBar.css'
+import './SearchBar.css'
 
 function SearchBar() {
 
