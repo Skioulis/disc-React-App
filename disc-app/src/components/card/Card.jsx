@@ -16,13 +16,13 @@ function Card() {
                 </div>
                 <div className="list-item-first-row-title">
                     <span className="list-item-title">
-                        to xasapiko
+                        to xasapiko 45645s6dafsadf sdf sda456f4sad56f4as
                     </span>
                 </div>
             </div>
             <div className="list-item-second-row">
                 <span className="list-item-lyrics">
-                    {sampleLyrics.slice(0, 50) + "..."}
+                    {sampleLyrics}
                 </span>
             </div>
             <div className="list-item-third-row">

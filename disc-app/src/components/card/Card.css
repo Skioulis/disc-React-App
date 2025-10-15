@@ -61,19 +61,25 @@
     text-overflow: clip;
     line-height: 1;
     text-align: center;
-    font-size: clamp(0.3rem, 1.8cqw, 0.7rem); /* responsive size within the circle, scales with card */
+    font-size: clamp(0.3rem, 7cqw, 0.7rem); /* responsive size within the circle, scales with card */
+    font-weight: 900;
     color: var(--color-text);
 }
 
 .list-item-first-row-title {
     flex: 1 1 auto;
     text-align: center;
-    font-size: clamp(0.8rem, 2cqw, 1.2rem); /* auto-adjust title size to card */
+    font-size: clamp(0.8rem, 2cqw, 1.2rem);
     line-height: 1.2;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    margin-left: 0;               /* no shift; title remains centered */
+
+    display: -webkit-box;       /* enable line clamping */
+    -webkit-line-clamp: 2;      /* allow up to 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;           /* hide extra text */
+    text-overflow: ellipsis;    /* add ellipsis */
+    white-space: normal;        /* allow wrapping to second line */
+
+    margin-left: 0;
 }
 
 .disk-id{
@@ -89,10 +95,18 @@
     background-color: var( --color-accent);
     height: auto;
     aspect-ratio: auto;
-    font-size: clamp(0.5rem, 1.5cqw, 0.8rem);
+    font-size: clamp(0.7rem, 1.5cqw, 0.8rem);
 }
 
 
 .list-item-second-row .list-item-lyrics{
-    font-size: clamp(0.5rem, 1.5cqw, 0.8rem);
+    font-size: clamp(0.8rem, 1.5cqw, 0.8rem);
+    display: -webkit-box;        /* enable multi-line clamp */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;       /* show up to 4 lines */
+    overflow: hidden;            /* hide extra text */
+    text-overflow: ellipsis;     /* ellipsis at the end */
+    white-space: normal;         /* allow wrapping */
+
+    /* keep your existing font-size if any */
 }
