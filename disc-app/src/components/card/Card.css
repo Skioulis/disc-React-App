@@ -11,6 +11,7 @@
     flex-direction: column;
     padding: 0.2rem;
     box-shadow: 0 0 1vw 0 rgba(0, 0, 0, 0.3);
+    container-type: inline-size;
 }
 
 .list-item > :nth-child(1) { flex: 1 1 0; }
@@ -60,14 +61,14 @@
     text-overflow: clip;
     line-height: 1;
     text-align: center;
-    font-size: clamp(0.3rem, 1.8vw, 0.7rem); /* responsive size within the circle */
+    font-size: clamp(0.3rem, 1.8cqw, 0.7rem); /* responsive size within the circle, scales with card */
     color: var(--color-text);
 }
 
 .list-item-first-row-title {
     flex: 1 1 auto;
     text-align: center;
-    font-size: clamp(0.8rem, 2vw, 1.2rem); /* auto-adjust title size */
+    font-size: clamp(0.8rem, 2cqw, 1.2rem); /* auto-adjust title size to card */
     line-height: 1.2;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -88,10 +89,10 @@
     background-color: var( --color-accent);
     height: auto;
     aspect-ratio: auto;
-    font-size: clamp(0.5rem, 1.5vw, 0.8rem);
+    font-size: clamp(0.5rem, 1.5cqw, 0.8rem);
 }
 
 
 .list-item-second-row .list-item-lyrics{
-    font-size: clamp(0.5rem, 1.5vw, 0.8rem);
+    font-size: clamp(0.5rem, 1.5cqw, 0.8rem);
 }
