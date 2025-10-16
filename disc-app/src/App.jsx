@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Navbar from './components/navbar/Navbar'
-import Card from "./components/card/Card.jsx";
+import SongList from './components/SongList/SongList.jsx'
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
     <>
         <Navbar />
         <main>
-            <Card />
+            <SongList />
         </main>
 
 
