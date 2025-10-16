@@ -8,7 +8,12 @@ export default function SongList() {
 
     return (
         <>
-            {SampleSongs.map((song) => (<Card/>))}
+            <ul>
+            {SampleSongs.map((song) => (
+                <li>
+                    <Card key={song.id} song={song}/>
+                </li>))}
+            </ul>
         </>
     )
 }
