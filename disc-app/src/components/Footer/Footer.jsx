@@ -24,7 +24,17 @@ import './Footer.css';
 export default function Footer() {
     return (
     <>
-        <footer className="footer">Footer</footer>
+        <footer className="footer">
+            <div className="footer-content">
+                <div className="footer-left">
+                    <span>left</span>
+                </div>
+                <div className="footer-right">
+                    <span>right</span>
+                </div>
+            </div>
+
+        </footer>
     </>
     );
 }
