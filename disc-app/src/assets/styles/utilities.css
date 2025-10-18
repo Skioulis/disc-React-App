@@ -1,0 +1,21 @@
+.box-container {
+    position: fixed;
+    background-color:var(--color-surface);
+    width: 98%;
+    z-index: 1000;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.styled-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--color-accent);
+    font-size: 1rem;
+    border-radius: 2dvw;
+    box-shadow: 0 0 1vw 0 rgba(0, 0, 0, 0.3);
+    z-index: 1500;
+
+}

@@ -19,15 +19,17 @@
 
 import React from 'react';
 import './Footer.css';
+import '../../assets/styles/utilities.css'
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 
 export default function Footer() {
     return (
     <>
-        <footer className="footer">
-            <div className="footer-content">
+        <footer className="footer box-container">
+            <div className="footer-content styled-box">
                 <div className="footer-left">
-                    <span>left</span>
+                    <span>Created by Fotis Fotiadis <span className="copyright-symbol">©</span>{new Date().getFullYear()}</span>
                 </div>
                 <div className="footer-right">
                     <span>right</span>

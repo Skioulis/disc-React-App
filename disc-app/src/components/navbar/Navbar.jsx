@@ -3,12 +3,13 @@ import React from 'react';
 import './Navbar.css';
 import PlusButton from './buttons/PlusButton';
 import SearchBar from "./search-section/SearchBar.jsx";
+import '../../assets/styles/utilities.css'
 
 
 function Navbar(){
     return (
-        <header>
-            <nav className="navbar">
+        <header className="box-container">
+            <nav className="navbar styled-box">
                 <div className="left-section">
                     <PlusButton />
                 </div>

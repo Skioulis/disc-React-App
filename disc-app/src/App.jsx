@@ -7,12 +7,12 @@ import SongList from './components/SongList/SongList.jsx'
 function App() {
 
   return (
-    <div className="App">
+    <div className="App-grid">
         <Navbar />
 
         <main>
 
-            {/*<SongList />*/}
+            <SongList />
         </main>
 
         <Footer />

@@ -8,7 +8,7 @@ export default function SongList() {
 
     return (
         <>
-            <ul>
+            <ul className="list-container">
             {SampleSongs.map((song) => (
                 <li>
                     <Card key={song.id} song={song}/>
