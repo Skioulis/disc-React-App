@@ -1,8 +1,9 @@
 .footer {
     color: var(--color-text);
-    padding: 20px;
+    padding-top: 0.2rem;
     text-align: center;
     /*max-height: 80px;*/
+    font-size: 0.5rem;
 
     /* let it span full viewport width at the bottom */
     position: fixed;
@@ -18,6 +19,8 @@
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
+    font-size: 1em;
+    padding: 0.5rem;
 }
 
 .footer a {
@@ -29,6 +32,7 @@
 /* Hover (mouse) */
 .footer a:hover {
     color: #0A66C2;
+
 }
 
 .footer a:focus-visible {
