@@ -9,9 +9,9 @@ export default function SongList() {
     return (
         <>
             <div className="list-title">
-                <h2>
+                <h3>
                     Τραγούδια
-                </h2>
+                </h3>
             </div>
             <div className="list-scroll" >
             <ul className="list-container">
