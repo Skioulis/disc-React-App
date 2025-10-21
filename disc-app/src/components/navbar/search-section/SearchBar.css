@@ -5,9 +5,11 @@
     gap: 10px;
     /*margin: 0 auto;*/
     background-color: var(--color-primary);
-    height: 3.5rem;
+    height: 1.8rem;
     width: 20rem;
     padding: 1rem;
+    margin-right: 2em;
+    border-radius: 10px;
 }
 
 .search-input {

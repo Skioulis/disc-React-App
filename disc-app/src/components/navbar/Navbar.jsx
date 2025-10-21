@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Search, Play, Music, Users, FileText } from 'lucide-react';
 import './Navbar.css';
 import PlusButton from './buttons/PlusButton';
 import SearchBar from "./search-section/SearchBar.jsx";
