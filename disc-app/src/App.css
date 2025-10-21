@@ -73,4 +73,5 @@ header {
 /* Ensure main content starts below the fixed navbar */
 main {
     padding-top: 6.5rem; /* approximate height of fixed navbar incl. padding */
+    max-width: 1200px
 }
