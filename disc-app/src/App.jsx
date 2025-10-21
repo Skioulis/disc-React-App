@@ -7,7 +7,7 @@ import SongList from './components/SongList/SongList.jsx'
 function App() {
 
   return (
-    <div className="App-grid">
+    <div className="App-flex">
         <Navbar />
 
         <main>

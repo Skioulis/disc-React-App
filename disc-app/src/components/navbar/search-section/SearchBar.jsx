@@ -6,17 +6,17 @@ import './SearchBar.css'
 function SearchBar() {
 
     return (
-        <div className="search-container">
-            <NavDropdown />
+        <form className="search-container" onSubmit={(e) => e.preventDefault()}>
+            <NavDropdown/>
             <input
                 type="text"
                 placeholder="Search..."
                 className="search-input"
             />
-            <button className="search-button">
+            <button type="submit" className="search-button">
                 <Search size={"2rem"}/>
             </button>
-        </div>
+        </form>
     )
 }
 
