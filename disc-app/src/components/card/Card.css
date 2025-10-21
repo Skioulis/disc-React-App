@@ -47,8 +47,9 @@
     padding: 0.14rem;
     box-shadow: 0 0 1vw 0 rgba(0, 0, 0, 0.3);
     position: absolute;          /* pin to top-left of the row/card */
-    top: 0.4rem;
+    top: 0.1rem;
     left: 0.4rem;
+    margin-bottom: 10px;
 }
 
 .list-item-circle .disk-id {
@@ -80,6 +81,7 @@
     white-space: normal;        /* allow wrapping to second line */
 
     margin-left: 0;
+
 }
 
 .disk-id{
