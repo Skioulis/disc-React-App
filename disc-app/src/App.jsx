@@ -4,6 +4,7 @@ import Navbar from './components/navbar/Navbar'
 import Footer from './components/Footer/Footer.jsx'
 import SongList from './components/SongList/SongList.jsx'
 
+
 function App() {
 
   return (
@@ -12,11 +13,16 @@ function App() {
         <Navbar />
 
         <main>
+            <div className="viewport">
+                <div className="image-wrap">
+                    {/*<img src="./assets/Images/bg-img.png" alt=""/>*/}
+                </div>
+            </div>
 
-            <SongList />
+            <SongList/>
         </main>
 
-        <Footer />
+        <Footer/>
 
     </div>
   )
