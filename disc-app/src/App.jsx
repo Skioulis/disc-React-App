@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from './components/navbar/Navbar'
 import Footer from './components/Footer/Footer.jsx'
 import SongList from './components/SongList/SongList.jsx'
+import BackgroundImage from './components/backgroundImage/BackgroundImage.jsx'
 
 
 function App() {
@@ -13,13 +14,11 @@ function App() {
         <Navbar />
 
         <main>
-            <div className="viewport">
-                <div className="image-wrap">
-                    {/*<img src="./assets/Images/bg-img.png" alt=""/>*/}
-                </div>
-            </div>
+
 
             <SongList/>
+
+            <BackgroundImage/>
         </main>
 
         <Footer/>
